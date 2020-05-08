@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.contentContainer {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+.countryTooltipStyle {
+  font-size: 1.2em !important;
+  font-family: "Comic Neue", cursive;
+  background-color: #343a40 !important;
+}
+
+.tagTooltipStyle {
+  font-size: 1.2em !important;
+  font-family: "Comic Neue", cursive;
+  background-color: #117a65 !important;
+  /* border: 1px solid #ECEFF1 !important; */
+}
+
+.zomableMap {
+  transition: transform 0.8s;
+  /* transform: translate(0,0) scale(1) !important; */
+}
+
+.hashTag {
+  transition: font-size 0.8s;
+  font-family: "Comic Neue", cursive;
+  font-size: 3px;
+  fill: #f4511e;
+}
+
+.hashTag:hover {
+  font-family: "Comic Neue", cursive;
+  font-size: 4px;
+  /* fill: #F4511E; */
+  cursor: pointer;
+}
+
+.navbar-header {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+.navbar-brand {
+  float: none;
+}
+
+.ui.segment {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.col-12 {
+  padding: 0 !important;
+}
+
+.userBadge {
+  color: #f4511e;
+  border: 1px solid #f4511e;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.loadingPlaceholder {
+  color: #f4511e;
+  /* border: 1px solid #F4511E;
+  border-radius: 10px; */
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  display: block;
+}
+
+.backToCountryView {
+  color: #f4511e;
+  /* border: 1px solid #F4511E;
+  border-radius: 10px; */
+  font-family: "Comic Neue", cursive;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
+  display: block;
+}
+
+.lightBackground {
+  background-attachment: fixed;
+  background-size: cover;
+
+  background-color: #dfeaf5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23f5f5f5' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.darkBackground {
+  background-attachment: fixed;
+  background-size: cover;
+
+  background-color: #000320;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
